@@ -1,0 +1,43 @@
+RAG-Based Conversational Chatbot using LangChain and Groq's Llama3
+
+Overview
+
+This project implements a Retrieval-Augmented Generation (RAG) chatbot using LangChain, Groq's Llama3 model, and Hugging Face embeddings. The chatbot maintains session-based chat history for better context retention, ensuring accurate and contextual responses across multiple user interactions.
+
+Features
+
+Retrieval-Augmented Generation (RAG): Enhances the chatbot’s response accuracy by retrieving relevant information from a knowledge base.
+
+Groq’s Llama3 Model: Utilized for generating conversational responses.
+
+Hugging Face Embeddings: Used to encode and retrieve similar context.
+
+Session-Based Chat History: Ensures context retention across interactions.
+
+LangChain Integration: Provides modular components for conversational AI.
+
+Approach
+
+Embedding Model Selection:
+
+Used a Hugging Face embedding model to convert text into vector representations.
+
+Retrieval Mechanism:
+
+Indexed a document store with the embeddings.
+
+Fetched the most relevant context dynamically during a conversation.
+
+Session-Based Chat History:
+
+Implemented a mechanism to retain past user queries and responses within a session.
+
+Helps in generating context-aware answers.
+
+Integration with Groq’s Llama3 Model:
+
+Passed retrieved context and chat history to Llama3 for improved response generation.
+
+LangChain for Pipeline Management:
+
+Utilized LangChain’s document loaders, vector stores, and chains for streamlined processing.
